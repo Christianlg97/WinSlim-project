@@ -1,4 +1,4 @@
-# WinSlim 10 By Christianlg97 Changelog:
+# WinSlim 10 By Christianlg97 {Changelog}:
 
 
 # [Update: **WinSlim 10 Build 7.1 ** | 22-12-2024]
