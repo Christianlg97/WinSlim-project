@@ -1,0 +1,320 @@
+/* Personalización de fondo de la web en body */
+body {
+    background-image: url('imagenes_web/Backgroundweb.jpg'); /* Ruta relativa */
+    background-size: cover; /* Utiliza solo 'cover' */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+    margin: 2%;
+}
+
+/* Ajuste de imagen de logo en web */
+#Logo {
+    text-align: left;
+    margin: 2% 50px 1% 1%; /* Margen combinado: arriba, derecha, abajo, izquierda */
+    border-radius: 32px;
+    padding: 0;
+}
+
+/* Ajuste del subtítulo H3 junto al logo */
+#Logo h3 {
+    font-style: italic;
+    color: white;
+    margin-top: 0; 
+    display: inline;
+    margin-left: 3%;
+    background-color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Ajuste del subtítulo H4 junto al logo (si aplica) */
+#Logo h4 {
+    font-style: italic;
+    color: white;
+    margin-top: 0;
+    margin-left: 37%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Estilo de los enlaces dentro del logo */
+#Logo a {
+    text-decoration: none;
+    display: inline;
+}
+
+/* Configuración de estilo del menú */
+.Menu {
+    display: flex;
+    justify-content: left;
+    text-align: center;
+    border: 3px solid gray; /* Eliminados los comas */
+    background-color: silver;
+    margin: 25px 15px auto 15px; /* Margen combinado */
+    border-radius: 32px;
+    text-align: left;
+    max-height: 70px;
+    padding: 6px;
+}
+
+/* Configuración de los elementos li del menú */
+.Menu li {
+    display: inline-block; /* Mejor manejo de elementos en línea */
+    padding: 6px;
+    margin: 0 0 0 0;
+    border: 1px solid gray; /* Eliminados los comas */
+    border-radius: 32px;
+    background-color: black;
+    border: solid 2px black;
+}
+
+.Menu li:hover {
+    background-color: gray;
+    border: solid 2px silver;
+    
+}
+
+.Menu a:hover {
+    color: white;
+    background-color: gray;
+    font-style: bold;
+}
+
+/* Estilo de los enlaces dentro del menú */
+.Menu a {
+    
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    margin-left: 4px;
+    border: solid 2px gray;
+    border-radius: 32px;
+}
+
+/* Ajuste del fondo de cuadro de texto en body */
+#BodyPad {
+    color: white;
+    text-align: left;
+    font-style: italic;
+    background-color: black;
+    border: 3px solid silver; /* Eliminados los comas */
+    border-radius: 32px;
+    display: block;
+    margin: 50px 150px; /* Margen combinado */
+    padding: 50px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Ajuste específico de subtítulo dentro de BodyPad */
+#BodyPad h2 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Estilos para subtítulos, párrafos y listas dentro de BodyPad */
+#BodyPad h3,
+#BodyPad p,
+#BodyPad li {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 1%;
+    font-size: large;
+    padding: 10px;
+}
+
+/* Estilos específicos para elementos de lista dentro de BodyPad */
+#BodyPad li {
+    margin: 3% 0; /* Margen superior e inferior */
+    font-size: larger;
+    text-align: left;
+}
+
+/* Estilo específico del subtítulo H3 dentro de BodyPad */
+#BodyPad h3 {
+    font-size: 200%;
+    text-align: center;
+}
+
+/* Ajuste de firma a pie de carta de presentación en "Historia" */
+#PSignature {
+    display: flex;
+    justify-content: flex-end; /* Alinea a la derecha */
+    text-align: right;
+    margin: 60px 0 50px 0; /* Margen superior e inferior */
+}
+
+/* Cuerpo del Footer */
+#BodyPadF {
+    text-align: center;
+    color: white;
+    font-style: italic;
+    background-color: black;
+    border: 3px solid silver; /* Eliminados los comas */
+    border-radius: 6px;
+    display: block;
+    margin: 50px;
+    padding: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Párrafo del Footer */
+#BodyPadF p {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+/* Ajuste de "Características" de manera específica */
+#Features {
+    margin: 155px 155px 60px; /* Margen combinado */
+    color: white;
+    text-align: left;
+    font-style: italic;
+    background-color: black;
+    border: 3px solid silver; /* Eliminados los comas */
+    border-radius: 32px;
+    display: block;
+    padding: 45px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#Features p {
+    margin-left: 15%;
+    font-size: medium;
+    padding: 5px;
+
+}
+
+/* Ajuste específico del Subtítulo H3 dentro de "Features" */
+#Features h3 {
+    display: block; 
+    text-align: center; 
+    margin-bottom: 80px; 
+    font-size: xx-large; 
+    text-decoration: underline;
+}
+
+/* Ajuste de Logo2 */
+.Logo2 { 
+    color: white;
+    background-color: black;
+    border: 3px solid silver; /* Eliminados los comas */
+    border-radius: 6px;
+    margin-top: 2%;
+    margin-bottom: 0;
+    padding: 2px;
+    height: 40%;
+    width: 60%;
+    text-align: center;
+}
+
+/* Parámetros globales aplicados al footer de la web */
+#Footer {
+    color: white;
+    text-align: center;
+    background-color: black;
+    border-radius: 6px;
+    display: block;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0;
+    margin: auto 0 0 0;
+}
+
+#img1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin:70px auto 15px auto; /* Margen combinado */
+    border-radius: 12px;
+    max-width: 60%;
+    height: auto;
+
+}
+
+#img2 {
+    display: inline;
+    text-align: center;
+    margin: 20px;
+    margin-bottom: 30px;
+    border: solid 2px silver;
+    border-radius: 12px;
+    max-width: 20%;
+    height: auto;
+}
+
+a{
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: auto 3px auto 3px;
+    
+}
+
+#BodyPad2 {
+    color: white;
+    font-style: italic;
+    background-color: black;
+    border: 3px solid silver; /* Eliminados los comas */
+    border-radius: 32px;
+    margin: 50px 100px 50px 100px;
+    padding: 50px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+table {
+    border: 2px solid gray;
+    border-collapse: solid;
+    padding: 15px;
+    text-align: center;
+    background-color: silver;
+    color: white;
+    margin: 0 auto;
+    border-radius: 16px;
+} 
+
+th { 
+    border: 2px solid gray;
+    border-collapse: solid;
+    padding: 16px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin: 0 auto;
+    border-radius: 16px;
+}
+
+td {
+    border: 2px solid silver;
+    border-collapse: solid;
+    padding: 15px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin: 0 auto;
+    border-radius: 16px;
+}
+
+html  {
+    scroll-behavior: smooth;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 32px;
+    padding: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+button:hover {
+    background-color: gray;
+    color: white;
+    border: 2px solid silver;
+    border-radius: 12px;
+    padding: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: bold;
+    cursor: pointer;
+}
