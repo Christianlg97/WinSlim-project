@@ -6,6 +6,9 @@ body {
     background-repeat: no-repeat;
     background-color: black;
     margin: 2%;
+    background-attachment: fixed;
+    height: 100%; /* Asegura que el cuerpo llene toda la pantalla */
+    
 }
 
 /* Ajuste de imagen de logo en web */
@@ -173,7 +176,7 @@ body {
     border-radius: 6px;
     display: block;
     padding: 0;
-    margin: auto 0 0 0;
+    margin: 100% 0 0 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
                  Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -278,36 +281,68 @@ button:hover {
     cursor: pointer;
 }
 
-/* ======================================== */
-/*       AJUSTES RESPONSIVOS EN MÓVILES     */
-/* ======================================== */
-@media (max-width: 768px) {
-    body {
-        margin: 0;
-        padding: 0;
-    }
+/* Contenedor principal */
+.dropdown-container {
+    width: auto;
+    text-align: center;
+    margin: 35px 50px auto 50px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+  }
 
-    /* Logo e imágenes en móviles */
-    #Logo img {
-        width: 80%;
-        height: auto;
-        margin: auto;
-        display: block;
-    }
+  /* Estilo del botón simulando un label */
+  .dropdown-label {
+    display: flex;
+    justify-content: left;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 16px;
+    user-select: none;
+    border: 4px solid white;
+    scroll-behavior: smooth;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+  }
 
-    #Logo h3 {
-        text-align: center;
-        font-size: smaller;
-    }
+  .dropdown-label:hover {
+    background-color: gray;
+    border: 4px solid silver;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
 
-    /* Menú en columnas verticales */
-    .Menu {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
-    .Menu li {
-        width: 90%;
-        text-align: center;
-        ma
-    }
+  /* Ocultar el checkbox */
+  .dropdown-checkbox {
+    display: none;
+  }
+
+  /* Contenedor del contenido desplegable */
+  .dropdown-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    border-radius: 16px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    scrollbar-width: none; /* Para Firefox */
+  -ms-overflow-style: none; /* Para IE y Edge heredado */
+    scroll-behavior: smooth;
+  }
+
+  /* Contenido interno del dropdown */
+  .dropdown-content-inner {
+    padding: 10px;
+    font-size: 14px;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+  }
+
+  /* Expansión del contenido cuando el checkbox está activado */
+  .dropdown-checkbox:checked + .dropdown-label + .dropdown-content {
+    max-height: 500px; /* Define la altura máxima permitida */
+    overflow: scroll;
+    scrollbar-width: 0;
+    scroll-behavior: smooth;
+
+  }

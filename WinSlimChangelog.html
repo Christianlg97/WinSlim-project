@@ -50,152 +50,38 @@
                 </nav>
             </div>
 
-    <div id="BodyPad">
-    <!-- UPDATE 7.1 -->
-    <h3>[Update: <strong>WinSlim 10 Build 7.1</strong> | 22-12-2024]</h3>
-    <ul>
-      <li><strong>Mejora</strong>: Se deshabilitaron algunos servicios en segundo plano innecesarios, minimizando el consumo de recursos en segundo plano y mejorando el rendimiento general del sistema.</li>
-      <li><strong>Utilidad Nueva</strong>: Se sustituye el instalador de paquetes RuckZuck por Npack (Mejor rendimiento y variedad en aplicaciones disponibles).</li>
-      <li><strong>Mejora</strong>: Se añaden mejoras y optimizaciones en la gestión y velocidad de la red.</li>
-      <li><strong>Mejora</strong>: Habilitación de atributos avanzados para CPUs de múltiples núcleos en configuraciones de alto rendimiento, se ha habilitado la opción para ajustar el desempaquetado de núcleos directamente desde el perfil de energía, aumentando el rendimiento en juegos exigentes.</li>
-      <li><strong>Mejora</strong>: Desactivación de GameDVR: Elimina grabaciones automáticas en segundo plano para juegos, liberando recursos para mejorar la tasa de FPS.</li>
-      <li><strong>Mejora</strong>: Windows Defender: Desactivación de funciones innecesarias como monitoreo de comportamiento, protección en la nube y análisis en tiempo real, para liberar recursos.</li>
-      <li><strong>Corrección</strong>: Se corrige la posición y resolución del wallpaper por defecto del sistema.</li>
-      <li><strong>Corrección</strong>: Ajustes en el archivo de paginación para evitar problemas de rendimiento en sistemas con baja RAM.</li>
-      <li><strong>Correción</strong>: Recuperación de GPU: Ajuste del controlador (TdrLevel) para garantizar la estabilidad en caso de fallos gráficos.</li>
-    </ul>
-    <hr>
-
-    <!-- UPDATE 7 -->
-    <h3>[Update: <strong>WinSlim 10 Build 7</strong> | 26-11-2024]</h3>
-    <ul>
-      <li><strong>Corrección</strong>: Se resolvió un error que causaba interrupciones en las conexiones de red al usar VPNs específicas.</li>
-      <li><strong>Corrección</strong>: Ajustes en el <em>scheduler</em> del sistema para mejorar el rendimiento en juegos con CPUs de múltiples núcleos.</li>
-      <li><strong>Cambio</strong>: Se mejoró la gestión del espacio en disco mediante ajustes en el servicio "WinSxS", reduciendo el tamaño de la carpeta sin afectar a la estabilidad.</li>
-      <li><strong>Cambio</strong>: Se incluye un nuevo tema principal del sistema (WinSlim Silver).</li>
-      <li><strong>Mejora</strong>: Se implementaron optimizaciones adicionales en el registro para acelerar el acceso a las unidades SSD.</li>
-      <li><strong>Mejora</strong>: Se limita el consumo de CPU de Windows Defender al 5%, permitiendo un uso más eficiente de los recursos y menor impacto en el sistema.</li>
-      <li><strong>Mejora</strong>: La configuración predeterminada de <em>swapfile</em> se ajustó para reducir el impacto en el rendimiento de sistemas con baja RAM.</li>
-      <li><strong>Mejora</strong>: Aceleración del apagado del sistema deshabilitando servicios innecesarios en ese momento.</li>
-      <li><strong>Privacidad</strong>: Nuevas configuraciones predefinidas para evitar el rastreo de actividad a nivel de sistema.</li>
-      <li><strong>Utilidad nueva</strong>: Se añadió un script automatizado para desactivar la recolección de datos de diagnóstico después de futuras actualizaciones.</li>
-      <li><strong>Utilidad nueva</strong>: Herramienta preconfigurada para ajustar latencia de red según el uso (Gaming/Streaming/Trabajo).</li>
-      <li><strong>Utilidad nueva</strong>: Atajos personalizados añadidos en el menú de inicio para herramientas clave de optimización y diagnóstico.</li>
-    </ul>
-    <hr>
-
-    <!-- UPDATE 6 -->
-    <h3>[Update: <strong>WinSlim 10 Build 6</strong> | 21-11-2024]</h3>
-    <ul>
-      <li><strong>Corrección</strong>: Se corrigió un problema que impedía la ejecución adecuada de varios servicios en segundo plano.</li>
-      <li><strong>Corrección</strong>: Ajustes en el manejo de transparencia predeterminada para resolver problemas de rendimiento.</li>
-      <li><strong>Cambio</strong>: La programación de GPU acelerada por hardware (HAGS) se desactiva por defecto, mejorando el rendimiento y la estabilidad en hardware antiguo y de gama baja.</li>
-      <li><strong>Corrección</strong>: Se deshabilitó la optimización de pantalla completa (GameDVRBehaviour) para evitar <em>stuttering</em> e inestabilidad en ciertos juegos.</li>
-      <li><strong>Novedad</strong>: Ahora las herramientas y scripts incluidos tienen íconos temáticos, como el desinstalador profundo y el instalador de la Microsoft Store.</li>
-      <li><strong>Mejora</strong>: Optimización drástica del tiempo de arranque y reinicio del sistema, haciéndolos aún más rápidos.</li>
-      <li><strong>Mejora</strong>: Ajustes adicionales en el registro y el código para mejorar la optimización general del sistema.</li>
-      <li><strong>Mejora</strong>: Reducción significativa en el consumo de recursos en segundo plano.</li>
-      <li><strong>Mejora</strong>: Se deshabilitó el algoritmo de Nagle en el gestor de red, mejorando el <em>ping</em> y eliminando el <em>stuttering</em> en juegos en línea.</li>
-      <li><strong>Privacidad</strong>: Refuerzo de las configuraciones de privacidad a nivel de registro y código del sistema.</li>
-      <li><strong>Utilidad nueva</strong>: Se añadió un acceso directo para reiniciar directamente a la BIOS.</li>
-      <li><strong>Utilidad nueva</strong>: Se incluyó una herramienta de reparación y diagnóstico en script para verificar la integridad del sistema y la imagen de arranque.</li>
-      <li><strong>Utilidad nueva</strong>: Se añade acceso directo para la descarga de la utilidad "LossLess Scaling" para DLSS, AMD FSR y Frame Gen Universalmente.</li>
-    </ul>
-    <hr>
-
-    <!-- UPDATE 5 -->
-    <h3>[Update: <strong>WinSlim 10 Build 5</strong> | 17-11-2024]</h3>
-    <ul>
-      <li><strong>Corrección</strong>: Resuelto un problema en el servicio de "Optimización de entrega", que impedía la descarga de contenido en Xbox y Microsoft Store (mejora de compatibilidad con la app Xbox y GamePass).</li>
-      <li><strong>Mejora</strong>: Servicios de Bluetooth reactivados, mejorando la estabilidad de dispositivos conectados.</li>
-    </ul>
-    <hr>
-
-    <!-- UPDATE 4 - PRIMERA BUILD ESTABLE -->
-    <h3>[WinSlim 10 Build 4 | 14-11-2024]</h3>
-    <h2>Primera Build Estable</h2>
-    <ol>
-      <li>
-        <strong>Usuario predeterminado</strong>:
-        <ul>
-          <li>El usuario "Administrador" configurado como predeterminado.</li>
-          <li>SmartScreen deshabilitado por defecto.</li>
-        </ul>
-      </li>
-      <li>
-        <strong>Explorador de archivos</strong>:
-        <ul>
-          <li>Deshabilitados accesos rápidos y de red en el panel lateral.</li>
-          <li><strong>Novedad</strong>: Se añadieron accesos directos a <em>Descargas</em> y <em>Explorador de archivos</em> en el menú de inicio para facilitar la navegación.</li>
-        </ul>
-      </li>
-      <li>
-        <strong>Interfaz y diseño</strong>:
-        <ul>
-          <li>Transparencia deshabilitada para un mejor rendimiento.</li>
-          <li>Uso de íconos en lugar de miniaturas, eliminando la caché de estas (mayor rapidez y menor consumo).</li>
-        </ul>
-      </li>
-      <li>
-        <strong>Rendimiento y recursos</strong>:
-        <ul>
-          <li>Hibernación e inicio rápido deshabilitados, aumentando la estabilidad en hardware diverso.</li>
-          <li>Windows Update configurado en modo manual para limitar las actualizaciones a esenciales y de seguridad.</li>
-          <li>Barra de tareas en tamaño pequeño y sin notificaciones, mejorando la limpieza visual.</li>
-          <li>Servicios en segundo plano optimizados para reducir consumo de CPU y RAM.</li>
-        </ul>
-      </li>
-      <li>
-        <strong>Privacidad y seguridad</strong>:
-        <ul>
-          <li>Eliminación completa de telemetría y recopilación de datos por parte de Microsoft.</li>
-          <li>Características administrativas orientadas a empresas eliminadas para mayor seguridad.</li>
-        </ul>
-      </li>
-      <li>
-        <strong>Software y bloatware</strong>:
-        <ul>
-          <li>Eliminados programas no esenciales como Teams, OneDrive y Escritorio remoto.</li>
-          <li>Repositorio alternativo incluido para instalar/actualizar aplicaciones comunes.</li>
-        </ul>
-      </li>
-      <li>
-        <strong>Herramientas incluidas</strong>:
-        <ul>
-          <li>Script de activación por licencia digital (HWID) para Windows y Office.</li>
-          <li>Script para instalar la Microsoft Store.</li>
-          <li>"Geek Uninstaller" preinstalado para desinstalación profunda.</li>
-        </ul>
-      </li>
-      <li>
-        <strong>Optimización adicional</strong>:
-        <ul>
-          <li>Aislamiento del núcleo de Windows Defender deshabilitado por defecto (reconfigurable).</li>
-          <li>Perfil de energía "Máximo rendimiento" incluido para gaming.</li>
-          <li>Eliminados accesos innecesarios como "Buscar" y "Vista de tareas" en la barra de tareas.</li>
-          <li>Mejoras de latencia en menús e interfaz del sistema.</li>
-        </ul>
-      </li>
-      <li>
-        <strong>Extras</strong>:
-        <ul>
-          <li>Otras optimizaciones generales de rendimiento y estabilidad.</li>
-        </ul>
-      </li>
-    </ol>
-    </div>
-            
-            
-      
-        
-        <!-- Footer de la web -->
-        <div id="Footer">
-            <footer>
-                <hr>
+            <div class="dropdown-container">
+              <!-- Checkbox oculto para controlar el estado -->
+              <input type="checkbox" id="dropdownCheckbox" class="dropdown-checkbox">
+              
+              <!-- Etiqueta como botón para activar/desactivar -->
+              <label for="dropdownCheckbox" class="dropdown-label">WinSlim 10 Build 7.1 Changelog ></label>
+              
+              <!-- Contenido a desplegar -->
+              <div class="dropdown-content">
+                <div class="dropdown-content-inner" id="BodyPad">
+                  <!-- Tu contenido aquí -->
+                    <!-- UPDATE 7.1 -->
+                    <h3>[Update: <strong>WinSlim 10 Build 7.1</strong> | 22-12-2024]</h3>
+                    <ul>
+                      <li><strong>Mejora</strong>: Se deshabilitaron algunos servicios en segundo plano innecesarios, minimizando el consumo de recursos en segundo plano y mejorando el rendimiento general del sistema.</li>
+                      <li><strong>Utilidad Nueva</strong>: Se sustituye el instalador de paquetes RuckZuck por Npack (Mejor rendimiento y variedad en aplicaciones disponibles).</li>
+                      <li><strong>Mejora</strong>: Se añaden mejoras y optimizaciones en la gestión y velocidad de la red.</li>
+                      <li><strong>Mejora</strong>: Habilitación de atributos avanzados para CPUs de múltiples núcleos en configuraciones de alto rendimiento, se ha habilitado la opción para ajustar el desempaquetado de núcleos directamente desde el perfil de energía, aumentando el rendimiento en juegos exigentes.</li>
+                      <li><strong>Mejora</strong>: Desactivación de GameDVR: Elimina grabaciones automáticas en segundo plano para juegos, liberando recursos para mejorar la tasa de FPS.</li>
+                      <li><strong>Mejora</strong>: Windows Defender: Desactivación de funciones innecesarias como monitoreo de comportamiento, protección en la nube y análisis en tiempo real, para liberar recursos.</li>
+                      <li><strong>Corrección</strong>: Se corrige la posición y resolución del wallpaper por defecto del sistema.</li>
+                      <li><strong>Corrección</strong>: Ajustes en el archivo de paginación para evitar problemas de rendimiento en sistemas con baja RAM.</li>
+                      <li><strong>Correción</strong>: Recuperación de GPU: Ajuste del controlador (TdrLevel) para garantizar la estabilidad en caso de fallos gráficos.</li>
+                    </ul>
+                  </div>
+                </div>
+                
+                <!-- Footer de la web -->
+                <footer id="Footer">
+                  <hr>
                     <p>&copy;  2024 - WinSlim By Christianlg97 - Todos los derechos reservados. &copy;</p>
-                <hr>
-            </footer>
-        </div>
-
-    </body>
-</html>
+                  <hr>
+                </footer>
+      </body>
+  </html>
