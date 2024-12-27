@@ -2,10 +2,11 @@
 <html lang="es">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Para adaptación responsiva en móviles -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>WinSlim Project</title>
-        <link rel="icon" type="image/x-icon" href="imagenes_web/favicon.ico"> <!-- Ruta relativa -->
+        <link rel="icon" type="image/x-icon" href="imagenes_web/favicon.ico">
         <meta name="description" content="">
 
         <!-- Enlace a la hoja de estilo CSS -->
@@ -16,8 +17,10 @@
         <header>
             <span id="Logo">
                 <a href="index.html">
-                    <img style="border: solid silver; border-radius: 6px; margin-left: 1.8%; margin-bottom: 5px;" src="imagenes_web/LogoWEB.png" alt="LogoWEB">
-                    <img style="border: solid silver; border-radius: 6px; margin-left: 0.3%; height: 4.5%; width: 4.5%; margin-bottom: 5px;" src="imagenes_web/LogoWEB_A.png" alt="LogoWEB_A"> 
+                    <img style="border: solid silver; border-radius: 6px; margin-left: 1.8%; margin-bottom: 5px;" 
+                         src="imagenes_web/LogoWEB.png" alt="LogoWEB">
+                    <img style="border: solid silver; border-radius: 6px; margin-left: 0.3%; height: 4.5%; width: 4.5%; margin-bottom: 5px;" 
+                         src="imagenes_web/LogoWEB_A.png" alt="LogoWEB_A"> 
                 </a>
                 <br>
                 <h3>* 🚀 Rápido, Ligero y En cualquier PC 💻 *</h3>
@@ -33,7 +36,7 @@
                         <li>Inicio</li>
                     </a>
 
-                    <a href="#Changelog" title="Registro de cambios de la versión" alt="Inicio de la web">
+                    <a href="WinSlimChangelog.html" title="Registro de cambios de la versión" alt="Inicio de la web">
                         <li>Changelog</li>
                         </a>
                     <a href="WinSlimDownloadsES.html" title="Descarga tu versión favorita de WinSlim" alt="Descargas">
@@ -62,17 +65,19 @@
                 <li> 
                     Es una versión modificada de Windows pensada para maximizar el rendimiento, la eficiencia y la privacidad del usuario. 
                     Nace a partir del descontento con la evolución de las versiones oficiales de Windows, que, aunque ofrecen seguridad y modernidad, carecen de la ligereza y la optimización que tuvieron sistemas anteriores como Windows XP o 7. 
-                    Esta propuesta elimina bloatware, desactiva servicios innecesarios, reduce la telemetría, ajusta parámetros visuales y aplica configuraciones específicas a nivel de registro, todo con el objetivo de ofrecer una experiencia fluida, rápida y estable, independientemente del hardware.
                 </li>
                 <li>
-                    La esencia de WinSlim es devolver la sensación de inmediatez, simplicidad y control sobre el sistema operativo, garantizando mayor privacidad, menor consumo de recursos y una experiencia más cercana a los Windows clásicos, sin renunciar a las mejoras actuales, buscando en conjunto una interacción más ágil con el equipo. 
-                    En definitiva, WinSlim se presenta como un Windows "adelgazado" y adaptado al gusto del usuario que prioriza el rendimiento y la optimización por encima de funciones superfluas.
+                    La esencia de WinSlim es devolver la sensación de inmediatez, simplicidad y control sobre el sistema operativo, garantizando mayor privacidad, menor consumo de recursos y una experiencia más cercana a los Windows clásicos.
                 </li>
             </ul>
 
             <!-- Imagen al final de la lista -->
             <span>
-                <img id="img1" title="Imagen Tomada de WinSlim 10 Build 7.1 Estable" class="Logo2" src="imagenes_web/img1.jpg" alt="Imagen de WinSlim">
+                <img id="img1" 
+                     title="Imagen Tomada de WinSlim 10 Build 7.1 Estable" 
+                     class="Logo2" 
+                     src="imagenes_web/img1.jpg" 
+                     alt="Imagen de WinSlim">
             </span>
         </div>
 
@@ -80,35 +85,51 @@
         <div id="Features">
             <span>
                 <h3>Características de WinSlim:</h3>
-                <p><strong> - Optimización de Recursos:</strong> Eliminación de bloatware, servicios innecesarios y ajustes de Registro para mejorar rendimiento.</p>
-                <p><strong> - Mejor Fluidez y Estabilidad:</strong> Configuraciones visuales minimalistas y reducción de procesos en segundo plano.</p>
-                <p><strong> - Mayor Privacidad:</strong> Desactivación de telemetría y limitación de la recopilación de datos por parte de terceros.</p>
-                <p><strong> - Compatibilidad con Hardware Variado:</strong> Funciona de forma óptima en PCs potentes o de bajos recursos, HDD o SSD, poca RAM y CPUs modestas.</p>
-                <p><strong> - Experiencia Sencilla y Familiar:</strong> Entorno similar a Windows XP/7 con accesos directos útiles y sin funciones innecesarias.</p>
-                <p><strong> - Enfoque en el Rendimiento Gráfico y Gaming:</strong> Ajustes para priorizar la GPU y optimizar la experiencia en juegos exigentes.</p>
-                <p><strong> - Optimización de Red y Reducción de Latencia:</strong> Configuraciones en TCP/IP, desactivación de indexación y búsquedas innecesarias.</p>
-                <p><strong> - Control sobre Actualizaciones:</strong> Reducción del impacto de procesos automáticos, permitiendo al usuario decidir qué conservar.</p>
+                <p><strong> - Optimización de Recursos:</strong> Eliminación de bloatware y servicios innecesarios.</p>
+                <p><strong> - Mejor Fluidez y Estabilidad:</strong> Configuraciones visuales minimalistas, etc.</p>
+                <p><strong> - Mayor Privacidad:</strong> Desactivación de telemetría y limitación de datos.</p>
+                <p><strong> - Compatibilidad con Hardware Variado:</strong> Ideal tanto en PCs potentes como modestos.</p>
+                <p><strong> - Experiencia Sencilla y Familiar:</strong> Parecido a Windows XP/7.</p>
+                <p><strong> - Enfoque en el Rendimiento Gráfico y Gaming:</strong> Ajustes para priorizar la GPU.</p>
+                <p><strong> - Optimización de Red y Latencia:</strong> Configuraciones en TCP/IP.</p>
+                <p><strong> - Control sobre Actualizaciones:</strong> Se reduce el impacto de procesos automáticos.</p>
             </span>
-            <br>
-            <br>
+
+            <br><br>
             <span>
-                <a href="imagenes_web/ScreenShots WinSLim/Explorer.jpg" title="Explorador de Archivos de WinSlim 10" target="_blank">
-                    <img id="img2" src="imagenes_web/ScreenShots WinSLim/Explorer.jpg" alt="Explorador de Archivos de WinSlim 10">
+                <a href="imagenes_web/ScreenShots WinSLim/Explorer.jpg" 
+                   title="Explorador de Archivos de WinSlim 10" target="_blank">
+                    <img id="img2" 
+                         src="imagenes_web/ScreenShots WinSLim/Explorer.jpg" 
+                         alt="Explorador de Archivos de WinSlim 10">
                 </a>
 
-                <a href="imagenes_web/ScreenShots WinSLim/HomeScreen.jpg" title="Menú de Inicio de WinSlim 10" target="_blank">
-                    <img id="img2" src="imagenes_web/ScreenShots WinSLim/HomeScreen.jpg" alt="Menú de Inicio de WinSlim 10">
+                <a href="imagenes_web/ScreenShots WinSLim/HomeScreen.jpg" 
+                   title="Menú de Inicio de WinSlim 10" target="_blank">
+                    <img id="img2" 
+                         src="imagenes_web/ScreenShots WinSLim/HomeScreen.jpg" 
+                         alt="Menú de Inicio de WinSlim 10">
                 </a>
 
-                <a href="imagenes_web/ScreenShots WinSLim/Resources_CPU.jpg" title="Servicios y procesos en segundo plano" target="_blank">
-                    <img id="img2" src="imagenes_web/ScreenShots WinSLim/Resources_CPU.jpg" alt="Servicios y procesos en segundo plano">
+                <a href="imagenes_web/ScreenShots WinSLim/Resources_CPU.jpg" 
+                   title="Servicios y procesos en segundo plano" target="_blank">
+                    <img id="img2" 
+                         src="imagenes_web/ScreenShots WinSLim/Resources_CPU.jpg" 
+                         alt="Servicios y procesos en segundo plano">
+                </a>
+
+                <a href="imagenes_web\ScreenShots WinSLim\Resources_RAM.jpg" 
+                   title="Consumo de RAM en WinSlim" target="_blank">
+                    <img id="img2" 
+                         src="imagenes_web\ScreenShots WinSLim\Resources_RAM.jpg" 
+                         alt="Consumo de RAM en WinSlim">
                 </a>
             </span>
             <hr>
             
             <!-- Pie de Lista de características -->
             <span>
-                <p>En resumen, <strong>WinSlim</strong> está diseñado para ofrecer una experiencia de uso optimizada, combinando modernidad y eficiencia sin sacrificar la estabilidad y la privacidad. Únete a nosotros y descubre una nueva forma de disfrutar Windows al máximo.</p>
+                <p>En resumen, <strong>WinSlim</strong> está diseñado para ofrecer una experiencia de uso optimizada, combinando modernidad y eficiencia sin sacrificar estabilidad y privacidad.</p>
             </span>  
         </div>
 
