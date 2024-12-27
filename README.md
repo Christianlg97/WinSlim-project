@@ -3,7 +3,7 @@
 Es una versión modificada de Windows pensada para maximizar el rendimiento, la eficiencia y la privacidad del usuario. Nace a partir del descontento con la evolución de las versiones oficiales de Windows, que, aunque ofrecen seguridad y modernidad, carecen de la ligereza y la optimización que tuvieron sistemas anteriores como Windows XP o 7.
 La esencia de WinSlim es devolver la sensación de inmediatez, simplicidad y control sobre el sistema operativo, garantizando mayor privacidad, menor consumo de recursos y una experiencia más cercana a los Windows clásicos.
 
-
+ 
 # Características de WinSlim:
 
 - Optimización de Recursos: Eliminación de bloatware y servicios innecesarios.
@@ -23,7 +23,7 @@ La esencia de WinSlim es devolver la sensación de inmediatez, simplicidad y con
 - Control sobre Actualizaciones: Se reduce el impacto de procesos automáticos.
 
 
-
+ 
 # Origen de WinSlim
 
 Desde hace años, soy informático y usuario del sistema operativo Windows.
@@ -48,7 +48,7 @@ WinSlim es ideal tanto para gamers y entusiastas que cuentan con un hardware pot
 
 Este sistema cuenta con mejoras para gráficas dedicadas, optimizaciones para equipos con HDD, poca memoria RAM y CPUs modestos, gestionando los recursos de manera más eficiente y libre de características y funciones en segundo plano y bloatware. Además, es libre de telemetría y minimiza la información recopilada por terceros, salvaguardando la privacidad del usuario y eliminando el impacto en el rendimiento que esto generaba.
 
-
+ 
  "Christian Luis González, Autor de WinSlim" 
 
 _____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
