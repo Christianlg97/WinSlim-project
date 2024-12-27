@@ -49,7 +49,7 @@ WinSlim es ideal tanto para gamers y entusiastas que cuentan con un hardware pot
 Este sistema cuenta con mejoras para gráficas dedicadas, optimizaciones para equipos con HDD, poca memoria RAM y CPUs modestos, gestionando los recursos de manera más eficiente y libre de características y funciones en segundo plano y bloatware. Además, es libre de telemetría y minimiza la información recopilada por terceros, salvaguardando la privacidad del usuario y eliminando el impacto en el rendimiento que esto generaba.
 
 
- Christian Luis González, Autor de WinSlim 
+ "Christian Luis González, Autor de WinSlim" 
 
 _____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
