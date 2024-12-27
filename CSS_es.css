@@ -44,7 +44,7 @@ body {
     text-align: center;
     border: 3px solid gray;
     background-color: silver;
-    margin: 25px 15px auto 15px;
+    margin: 10px 2% 25px;
     border-radius: 32px;
     text-align: left;
     max-height: 70px;
@@ -93,7 +93,8 @@ body {
     border: 3px solid silver;
     border-radius: 32px;
     display: block;
-    margin: 50px 150px; 
+    justify-content: center;
+    margin: 2% 150px auto 150px; 
     padding: 50px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
                  Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -174,11 +175,16 @@ body {
     text-align: center;
     background-color: black;
     border-radius: 6px;
-    display: block;
+    display: flex;
+    justify-content: last baseline;
     padding: 0;
-    margin: 100% 0 0 0;
+    width: 100%;
+    margin: auto 0 0 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
                  Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: 2px solid white;
+    bottom: 0;
+
 }
 
 /* Imágenes */
@@ -218,7 +224,7 @@ a {
     background-color: black;
     border: 3px solid silver;
     border-radius: 32px;
-    margin: 50px 100px 50px 100px;
+    margin: 11% 150px 150px 150px;
     padding: 50px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
                  Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -324,7 +330,7 @@ button:hover {
     transition: max-height 0.3s ease-out;
     border-radius: 16px;
     margin-top: 10px;
-    margin-bottom: 0;
+    margin-bottom: 5px;
     scrollbar-width: none; /* Para Firefox */
   -ms-overflow-style: none; /* Para IE y Edge heredado */
     scroll-behavior: smooth;
@@ -332,17 +338,66 @@ button:hover {
 
   /* Contenido interno del dropdown */
   .dropdown-content-inner {
-    padding: 10px;
+    padding: 5px;
     font-size: 14px;
-    line-height: 1.6;
+    line-height: 1.4;
     scroll-behavior: smooth;
+    margin-bottom: 150px;
   }
 
   /* Expansión del contenido cuando el checkbox está activado */
   .dropdown-checkbox:checked + .dropdown-label + .dropdown-content {
-    max-height: 500px; /* Define la altura máxima permitida */
-    overflow: scroll;
+    max-height: 4000px; /* Define la altura máxima permitida */
     scrollbar-width: 0;
     scroll-behavior: smooth;
 
   }
+
+  #scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    border: 2px solid silver;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    display: none; /* Ocultamos el botón inicialmente */
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+#scrollToTop:hover {
+    background-color: gray;
+    color: black;
+    transform: scale(0.9); /* Efecto de escala al pasar el mouse */
+}
+
+#scrollToTop:active {
+    transform: scale(1.1); /* Efecto al hacer clic */
+}
+
+/* Estilo para el header */
+#header {
+    position: fixed; /* Hace que el header sea fijo */
+    top: 0; /* Fijado en la parte superior */
+    left: 0; /* Fijado en el borde izquierdo */
+    width: 99.7%; /* Ocupa todo el ancho */
+    background-color: black;
+    color: #fff; /* Color del texto */
+    padding: 10px auto auto auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+    z-index: 1000; /* Asegura que quede encima del contenido */
+    border: solid 3px black;
+    border-radius: 32px;
+}
+
+/* Compensa la altura del header */
+main {
+    margin-top: 200px; /* Ajusta según la altura de tu header */
+    padding: 20px; /* Espaciado interno opcional */
+}
+

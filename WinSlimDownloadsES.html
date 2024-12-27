@@ -14,41 +14,42 @@
     <body>
         <!-- Logotipo de la web con enlace a home -->
         <header>
-            <span id="Logo">
+            <div id="header">
+                <span id="Logo">
                 <a href="index.html">
                     <img style="border: solid silver; border-radius: 6px; margin-left: 1.8%; margin-bottom: 5px;" src="imagenes_web/LogoWEB.png" alt="LogoWEB">
                     <img style="border: solid silver; border-radius: 6px; margin-left: 0.3%; height: 4.5%; width: 4.5%; margin-bottom: 5px;" src="imagenes_web/LogoWEB_A.png" alt="LogoWEB_A"> 
                 </a>
                 <br>
                 <h3>* 🚀 Rápido, Ligero y En cualquier PC 💻 *</h3>
-            </span>
+                </span>
+        
+  
+                <!-- Menú horizontal en la parte superior de la web (Debajo del logo) -->    
+                <nav>
+                    <ul class="Menu">
+
+                        <a href="index.html" title="Inicio de la web" alt="Inicio de la web">
+                            <li>Inicio</li>
+                        </a>
+
+                        <a href="WinSlimChangelog.html" title="Registro de cambios de la versión" alt="Inicio de la web">
+                            <li>Changelog</li>
+                            </a>
+                        <a href="WinSlimDownloadsES.html" title="Descarga tu versión favorita de WinSlim" alt="Descargas">
+                            <li>Descargas</li>
+                        </a>
+                        <a href="WinSlimStory.html" title="Como surgió WinSlim" alt="Historia de WinSLim">
+                            <li>Historia</li>
+                        </a>
+
+                        <a href="#Tools" title="Herramientas Recomendadas para WinSlim y Windows" alt="Herramientas Recomendadas para WinSlim y Windows" target="_self">
+                            <li>WinSlim Tools</li>
+                            </a>
+                    </ul>
+                </nav>
+            </div>
         </header>
-
-        <div style="margin-top: 1%;">    
-            <!-- Menú horizontal en la parte superior de la web (Debajo del logo) -->    
-            <nav>
-                <ul class="Menu">
-
-                    <a href="index.html" title="Inicio de la web" alt="Inicio de la web">
-                        <li>Inicio</li>
-                    </a>
-
-                    <a href="WinSlimChangelog.html" title="Registro de cambios de la versión" alt="Inicio de la web">
-                        <li>Changelog</li>
-                        </a>
-                    <a href="WinSlimDownloadsES.html" title="Descarga tu versión favorita de WinSlim" alt="Descargas">
-                        <li>Descargas</li>
-                    </a>
-                    <a href="WinSlimStory.html" title="Como surgió WinSlim" alt="Historia de WinSLim">
-                        <li>Historia</li>
-                    </a>
-
-                    <a href="#Tools" title="Herramientas Recomendadas para WinSlim y Windows" alt="Herramientas Recomendadas para WinSlim y Windows" target="_self">
-                        <li>WinSlim Tools</li>
-                        </a>
-                </ul>
-            </nav>
-        </div>
         <br>
         <div id="BodyPad2">
             
@@ -103,10 +104,11 @@
 
         </div>
 
-        <div id="Footer">
-            <footer>
+        <!-- Footer de la web -->
+        <div>
+            <footer id="Footer">
                 <hr>
-                <p>&copy; 2024 - WinSlim By Christianlg97 - Todos los derechos reservados.</p>
+                    <p>&copy;  2024 - WinSlim By Christianlg97 - Todos los derechos reservados. &copy;</p>
                 <hr>
             </footer>
         </div>
