@@ -7,6 +7,7 @@ body {
     background-color: black;
     margin: 2%;
     background-attachment: fixed;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     height: 100%; /* Asegura que el cuerpo llene toda la pantalla */
     
 }
@@ -94,24 +95,41 @@ body {
     border-radius: 32px;
     display: block;
     justify-content: center;
-    margin: 2% 150px auto 150px; 
-    padding: 50px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
-                 Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 6% 150px auto 150px; 
+    padding: 65px;
+
 }
 
 /* Subtítulos, párrafos y listas dentro de BodyPad */
 #BodyPad h2 {
     text-align: center;
-    padding: 0;
+    padding: 28px;
     margin: 0;
+    font-size: 45px;
+    border: 8px, solid, silver;
+    border-radius: 64px;
+}
+
+#BodyPad h4 {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    color: whitesmoke;
+    margin: auto 50px auto 50px;
+    padding: 0;
 }
 
 #BodyPad h3,
-#BodyPad p,
 #BodyPad li {
     margin: 1%;
-    font-size: large;
+    font-size: larger;
+    padding: 10px;
+    margin: 3% 50px 10% 50px;
+}
+
+#BodyPad p {
+    margin: 1%;
+    font-size: larger;
     padding: 10px;
 }
 
@@ -147,12 +165,17 @@ body {
     padding: 5px;
 }
 
+#Features h4 {
+    margin-left: 15%;
+    font-size: medium;
+    padding: 5px;
+}
+
 #Features h3 {
     display: block; 
     text-align: center; 
     margin-bottom: 80px; 
     font-size: xx-large; 
-    text-decoration: underline;
 }
 
 /* Ajuste de Logo2 */
@@ -205,7 +228,7 @@ body {
     margin-bottom: 30px;
     border: solid 2px silver;
     border-radius: 12px;
-    max-width: 20%;
+    max-width: 160px;
     height: auto;
 }
 
@@ -226,8 +249,15 @@ a {
     border-radius: 32px;
     margin: 11% 150px 150px 150px;
     padding: 50px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
-                 Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#BodyPad2 h2 {
+    text-align: center;
+    padding: 28px;
+    margin: 0;
+    font-size: 45px;
+    border: 8px, solid, silver;
+    border-radius: 64px;
 }
 
 /* Tablas */
@@ -293,7 +323,6 @@ button:hover {
     text-align: center;
     margin: 35px 50px auto 50px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    scroll-behavior: smooth;
   }
 
   /* Estilo del botón simulando un label */
@@ -308,7 +337,6 @@ button:hover {
     border-radius: 16px;
     user-select: none;
     border: 4px solid white;
-    scroll-behavior: smooth;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
   }
 
@@ -333,7 +361,6 @@ button:hover {
     margin-bottom: 5px;
     scrollbar-width: none; /* Para Firefox */
   -ms-overflow-style: none; /* Para IE y Edge heredado */
-    scroll-behavior: smooth;
   }
 
   /* Contenido interno del dropdown */
@@ -341,7 +368,6 @@ button:hover {
     padding: 5px;
     font-size: 14px;
     line-height: 1.4;
-    scroll-behavior: smooth;
     margin-bottom: 150px;
   }
 
@@ -349,7 +375,6 @@ button:hover {
   .dropdown-checkbox:checked + .dropdown-label + .dropdown-content {
     max-height: 4000px; /* Define la altura máxima permitida */
     scrollbar-width: 0;
-    scroll-behavior: smooth;
 
   }
 
@@ -397,7 +422,153 @@ button:hover {
 
 /* Compensa la altura del header */
 main {
-    margin-top: 200px; /* Ajusta según la altura de tu header */
-    padding: 20px; /* Espaciado interno opcional */
+    margin-top: 120px; /* Ajusta según el tamaño real del header */
+    padding: 20px;
 }
+
+#imgtools {
+    margin: 50px 155px 60px;
+    color: white;
+    text-align: left;
+    font-style: italic;
+    background-color: black;
+    display: inline;
+    padding: auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+                 Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+/* Personalizacion de tooltips en palabras técnicas */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    color: goldenrod;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip strong {
+    color: goldenrod;
+}
+
+.tooltiptext strong {
+    color: goldenrod;
+    text-decoration: underline;
+}
+
+/* Contenedor del modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.95); /* Fondo oscuro */
+    display: flex;
+    flex-direction: column; /* Apila los elementos en columna */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+}
+
+/* Imagen dentro del modal */
+.modal-content {
+    max-width: 90%;
+    max-height: 80%; /* Máxima altura reservando espacio para el pie */
+    border-radius: 12px;
+    border: 3px solid white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+/* Pie de imagen */
+#caption {
+    text-align: center; /* Centrar texto */
+    color: white; /* Texto blanco */
+    margin-top: 10px; /* Espaciado entre la imagen y el pie */
+    font-size: 16px; /* Tamaño del texto */
+    font-family: Arial, sans-serif; /* Fuente clara */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo translúcido */
+    padding: 8px; /* Espaciado interno */
+    border-radius: 6px; /* Bordes redondeados */
+    max-width: 90%; /* Limitar el ancho al de la imagen */
+    word-wrap: break-word; /* Ajustar texto largo */
+}
+
+
+/* Botón de cierre */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.close:hover {
+    color: #ccc;
+}
+
+#BodyPad3 {
+    color: white;
+    text-align: left;
+    font-style: italic;
+    background-color: black;
+    border: 3px solid silver;
+    border-radius: 32px;
+    display: block;
+    justify-content: center;
+    margin: 6% 150px auto 150px; 
+    padding: 65px;
+}
+
+#BodyPad3 h2 {
+    text-align: center;
+    padding: 8px;
+    margin: 0;
+    font-size: 45px;
+    border: 8px, solid, silver;
+    border-radius: 64px;
+}
+
+#BodyPad3 li {
+    font-size: 18px;
+    padding: 20px;
+}
+
+#BodyPad3 h4 {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+
+
+
 
