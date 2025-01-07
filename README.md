@@ -54,7 +54,7 @@ Entre sus principales características, WinSlim incluye:
 * En resumen, WinSlim es una solución diseñada para recuperar el rendimiento y la eficiencia que muchos sentimos que se ha perdido con las versiones actuales de Windows, devolviendo al usuario el control y la satisfacción de usar un sistema operativo optimizado, estable y confiable.
 
 
- Christian Luis González, Autor de WinSlim 
+ "Christian Luis González, Autor de WinSlim" 
 
 _____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
