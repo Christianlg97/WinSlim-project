@@ -5,10 +5,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-color: black;
-    margin: 2%;
+    margin: 0;
     background-attachment: fixed;
-    height: 100%; /* Asegura que el cuerpo llene toda la pantalla */
-    
 }
 
 /* Ajuste de imagen de logo en web */
@@ -90,18 +88,17 @@ body {
     border-radius: 32px;
     display: block;
     justify-content: center;
-    margin: 6% 150px auto 150px; 
-    padding: 65px;
-
+    margin: 8% 150px auto 150px; 
+    padding: 4%;
 }
 
 /* Subtítulos, párrafos y listas dentro de BodyPad */
 #BodyPad h2 {
     text-align: center;
-    padding: 28px;
-    margin: 0;
-    font-size: 45px;
-    border: 8px, solid, silver;
+    padding: 1%;
+    margin: auto;
+    font-size: 40px;
+    border: 14px, solid, silver;
     border-radius: 64px;
 }
 
@@ -124,6 +121,7 @@ body {
 
 #BodyPad p {
     margin: 1%;
+    margin-bottom: 5%;
     font-size: larger;
     padding: 10px;
 }
@@ -137,6 +135,12 @@ body {
 #BodyPad h3 {
     font-size: 200%;
     text-align: center;
+}
+
+#BodyPad hr {
+    border: 2px solid silver;
+    border-radius: 16px;
+    margin: 150px auto auto auto;
 }
 
 /* Contenedor "Features" */
@@ -221,6 +225,8 @@ body {
     border-radius: 12px;
     max-width: 160px;
     height: auto;
+    pointer-events: visible;
+    cursor: pointer;
 }
 
 /* Enlaces globales */
@@ -236,8 +242,24 @@ a {
     background-color: black;
     border: 3px solid silver;
     border-radius: 32px;
-    margin: 11% 150px 150px 150px;
-    padding: 50px;
+    margin: 8% 150px 150px 150px; 
+    padding: 4%;
+    opacity: 1; /* Inicialmente invisible */
+    transform: translateY(20px); /* Desplaza hacia abajo ligeramente */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transición suave */
+}
+
+#BodyPad2.visible {
+    opacity: 1; /* Visible */
+    transform: translateY(0); /* Vuelve a su posición normal */
+}
+
+#BodyPad2 li {
+    display: flex;
+    justify-content: center;
+    border-radius: 64px;
+    border: solid 10px silver;
+    padding: 1%;
 }
 
 #BodyPad2 h2 {
@@ -283,6 +305,8 @@ html {
     scroll-behavior: smooth;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
                  Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 /* Botones */
@@ -342,7 +366,8 @@ button:hover {
   .dropdown-content {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-out;
+    transition: max-height 0.1s linear, opacity 0.3s linear; /* Animación suave */
+    opacity: 0;
     border-radius: 16px;
     margin-top: 10px;
     margin-bottom: 5px;
@@ -356,12 +381,15 @@ button:hover {
     font-size: 14px;
     line-height: 1.4;
     margin-bottom: 150px;
+    
+    
   }
 
   /* Expansión del contenido cuando el checkbox está activado */
   .dropdown-checkbox:checked + .dropdown-label + .dropdown-content {
-    max-height: 4000px; /* Define la altura máxima permitida */
+    max-height: 100%; /* Define la altura máxima permitida */
     scrollbar-width: 0;
+    opacity: 1;
 
   }
 
@@ -394,23 +422,32 @@ button:hover {
 
 /* Estilo para el header */
 #header {
-    position: fixed; /* Hace que el header sea fijo */
-    top: 0; /* Fijado en la parte superior */
-    left: 0; /* Fijado en el borde izquierdo */
-    width: 99.7%; /* Ocupa todo el ancho */
-    background-color: black;
+    position: fixed; /* Hace que el header esté fijo en la ventana */
+    top: 0; /* Sin espacio en la parte superior */
+    left: 0; /* Sin espacio en el borde izquierdo */
+    width: 98.6%; /* Ocupa todo el ancho de la ventana */
+    background-color: black; /* Fondo negro para superposición */
     color: #fff; /* Color del texto */
-    padding: 10px auto auto auto;
+    padding: 10px 20px; /* Margen interno */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
-    z-index: 1000; /* Asegura que quede encima del contenido */
-    border: solid 3px black;
-    border-radius: 32px;
+    z-index: 1000; /* Asegura que esté encima de todos los elementos */
+    border: solid 3px black; /* Borde negro */
+    border-radius: 0; /* Sin bordes redondeados para que encaje perfectamente */
 }
+
 
 /* Compensa la altura del header */
 main {
-    margin-top: 120px; /* Ajusta según el tamaño real del header */
+    margin-top: 150px; /* Ajusta según el tamaño real del header */
     padding: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.5s opacity linear, transform 0.5s ease;
+}
+
+main.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 #imgtools {
@@ -421,6 +458,7 @@ main {
     background-color: black;
     display: inline;
     padding: auto;
+    pointer-events: visible;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
                  Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
@@ -468,7 +506,7 @@ main {
 /* Contenedor del modal */
 .modal {
     display: none; /* Oculto por defecto */
-    position: fixed;
+    position: relative;
     z-index: 1000;
     left: 0;
     top: 0;
@@ -480,6 +518,7 @@ main {
     flex-direction: column; /* Apila los elementos en columna */
     justify-content: center; /* Centra verticalmente */
     align-items: center; /* Centra horizontalmente */
+    transition: 0.5s height linear;
 }
 
 /* Imagen dentro del modal */
@@ -508,17 +547,20 @@ main {
 /* Botón de cierre */
 .close {
     position: absolute;
-    top: 20px;
-    right: 40px;
+    top: 0px;
+    right: 2%;
     color: white;
-    font-size: 35px;
+    font-size: 50px;
     font-weight: bold;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.3s linear;
+    padding-left: 5px;
 }
 
 .close:hover {
-    color: #ccc;
+    color: whitesmoke;
+    pointer-events: visible;
+    font-weight: bolder;
 }
 
 #BodyPad3 {
@@ -534,12 +576,17 @@ main {
     padding: 65px;
 }
 
+#BodyPad3 p {
+    font-size: 20px;
+    padding: 5px;
+}
+
 #BodyPad3 h2 {
     text-align: center;
     padding: 8px;
     margin: 0;
     font-size: 45px;
-    border: 8px, solid, silver;
+    border: 14px, solid, silver;
     border-radius: 64px;
 }
 
@@ -555,7 +602,37 @@ main {
 }
 
 #BodyPad hr {
-    margin-top: 35px;
+    margin-top: auto;
+    border: 2px solid silver;
+    border-radius: 16px;
+}
+
+#BodyPad4 {
+        color: white;
+        text-align: left;
+        font-style: italic; 
+        border-radius: 32px;
+        display: block;
+        justify-content: center;
+        margin: 1% 150px 20px 150px; 
+        padding: 4%;
+}
+
+#BodyPad4 h2 {
+    text-align: center;
+    padding: 1%;
+    margin: auto;
+    background-color: black;
+    border: 3px solid silver;
+    font-size: 40px;
+    border: 14px, solid, silver;
+    border-radius: 64px; 
+}
+
+#BodyPad4 hr {
+    border: 2px solid silver;
+    border-radius: 16px;
+    margin: 150px auto auto auto;
 }
 
 
