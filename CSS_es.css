@@ -578,6 +578,7 @@ main.visible {
 
 #BodyPad3 p {
     font-size: 20px;
+    margin: auto 50px auto 50px;
     padding: 5px;
 }
 
@@ -591,8 +592,9 @@ main.visible {
 }
 
 #BodyPad3 li {
-    font-size: 18px;
+    font-size: 20px;
     padding: 20px;
+    margin: auto 50px auto 50px;
 }
 
 #BodyPad3 h4 {
