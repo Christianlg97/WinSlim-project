@@ -84,19 +84,19 @@ body {
     text-align: left;
     font-style: italic;
     background-color: black;
-    border: 3px solid silver;
+    border: 6px solid silver;
     border-radius: 32px;
     display: block;
     justify-content: center;
-    margin: 8% 150px auto 150px; 
+    margin: 8% 150px 8% 150px; 
     padding: 4%;
 }
 
 /* Subtítulos, párrafos y listas dentro de BodyPad */
 #BodyPad h2 {
     text-align: center;
-    padding: 1%;
-    margin: auto;
+    padding: 10px;
+    margin: auto auto auto auto;
     font-size: 40px;
     border: 14px, solid, silver;
     border-radius: 64px;
@@ -115,8 +115,8 @@ body {
 #BodyPad li {
     margin: 1%;
     font-size: larger;
-    padding: 10px;
-    margin: 3% 50px 10% 50px;
+    padding: 5px;
+    margin: auto auto auto auto;
 }
 
 #BodyPad p {
@@ -141,6 +141,12 @@ body {
     border: 2px solid silver;
     border-radius: 16px;
     margin: 150px auto auto auto;
+}
+
+#BodyPad3 hr {
+    border: 2px solid silver;
+    border-radius: 16px;
+    margin: 2% auto auto auto;
 }
 
 /* Contenedor "Features" */
@@ -242,7 +248,7 @@ a {
     background-color: black;
     border: 3px solid silver;
     border-radius: 32px;
-    margin: 8% 150px 150px 150px; 
+    margin: auto auto auto auto; 
     padding: 4%;
     opacity: 1; /* Inicialmente invisible */
     transform: translateY(20px); /* Desplaza hacia abajo ligeramente */
@@ -267,37 +273,46 @@ a {
     padding: 28px;
     margin: 0;
     font-size: 45px;
-    border: 8px, solid, silver;
+    border: 10px, solid, silver;
     border-radius: 64px;
 }
 
 /* Tablas */
 table {
     border: 2px solid gray;
-    padding: 15px;
+    padding: 8px;
     text-align: center;
     background-color: silver;
     color: white;
-    margin: 0 auto;
+    margin: auto auto auto auto;
     border-radius: 16px;
+    width: 85%;
+    height: auto;
+    table-layout: fixed; /* Fija el ancho de las columnas */
+
+
 } 
 
 th { 
     border: 2px solid gray;
-    padding: 16px;
+    padding: 8px;
     text-align: center;
     background-color: black;
     color: white;
     border-radius: 16px;
+    margin: auto;
+    word-wrap: break-word; /* Asegura que el texto se ajuste */
 }
 
 td {
     border: 2px solid silver;
-    padding: 15px;
+    padding: 11px;
     text-align: center;
     background-color: black;
     color: white;
     border-radius: 16px;
+    margin: auto;
+    word-wrap: break-word; /* Asegura que el texto se ajuste */
 }
 
 /* Comportamiento de scroll suave */
@@ -635,6 +650,19 @@ main.visible {
     border: 2px solid silver;
     border-radius: 16px;
     margin: 150px auto auto auto;
+}
+
+/* Ajuste para los vídeos incrustados */
+iframe {
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    margin: auto auto auto auto;
+    background-color: black;
+    border-radius: 32px;
+    border: solid silver;
+
+
 }
 
 
