@@ -5,7 +5,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-color: black;
-    margin: 0;
+    margin: min(0,12%);
     background-attachment: fixed;
 }
 
@@ -44,7 +44,7 @@ body {
     border-radius: 32px;
     text-align: left;
     max-height: 70px;
-    padding: 6px;
+    padding: min(6px, 12%);
 }
 
 /* Configuración de los elementos li del menú */
@@ -88,8 +88,11 @@ body {
     border-radius: 32px;
     display: block;
     justify-content: center;
-    margin: 8% 150px 8% 150px; 
-    padding: 4%;
+    margin: auto auto; 
+    padding: 6rem;
+    font-size: 1em;
+    width: 40rem;
+    
 }
 
 /* Subtítulos, párrafos y listas dentro de BodyPad */
@@ -97,7 +100,7 @@ body {
     text-align: center;
     padding: 10px;
     margin: auto auto auto auto;
-    font-size: 40px;
+    font-size: 2em;
     border: 14px, solid, silver;
     border-radius: 64px;
 }
@@ -114,7 +117,7 @@ body {
 #BodyPad h3,
 #BodyPad li {
     margin: 1%;
-    font-size: larger;
+    font-size: 1.5em;
     padding: 5px;
     margin: auto auto auto auto;
 }
@@ -292,15 +295,16 @@ a {
 /* Tablas */
 table {
     border: 2px solid gray;
-    padding: 8px;
+    padding: 6px;
     text-align: center;
     background-color: silver;
     color: white;
-    margin: auto auto auto auto;
+    margin: auto auto;
     border-radius: 16px;
-    width: 85%;
-    height: auto;
-    table-layout: fixed; /* Fija el ancho de las columnas */
+    width: 90%;
+    font-size: 75%;
+    height: min(100%, auto);
+    
 
 
 } 
@@ -333,7 +337,8 @@ html {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
                  Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
-    padding: 0;
+    padding: min(0, 12%);
+    font-size: min(5rem, auto);
 }
 
 /* Botones */
@@ -668,14 +673,18 @@ main.visible {
 iframe {
     display: flex;
     justify-content: center;
-    padding: 1%;
-    margin: auto auto auto auto;
+    padding: auto;
+    margin: auto;
     background-color: black;
     border-radius: 32px;
     border: solid silver;
+    max-width: 95%;
 
 
 }
+
+
+
 
 
 
