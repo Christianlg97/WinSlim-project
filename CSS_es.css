@@ -2,6 +2,9 @@
 body {
     background-image: url('imagenes_web/Backgroundweb.jpg');
     background-size: cover;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     background-position: center;
     background-repeat: no-repeat;
     background-color: black;
@@ -88,10 +91,12 @@ body {
     border-radius: 32px;
     display: block;
     justify-content: center;
-    margin: auto auto; 
+    margin: auto 150px auto 150px; 
+    margin-bottom: 0;
+    margin-top: 6%;
     padding: 6rem;
-    font-size: 1em;
-    width: 40rem;
+    font-size: 0.98em;
+    max-width: 90%;
     
 }
 
@@ -263,7 +268,9 @@ a {
     background-color: black;
     border: 3px solid silver;
     border-radius: 32px;
-    margin: auto auto auto auto; 
+    margin: auto auto ;
+    margin-top: 2%;
+    margin-bottom: 2%;
     padding: 4%;
     opacity: 1; /* Inicialmente invisible */
     transform: translateY(20px); /* Desplaza hacia abajo ligeramente */
@@ -295,15 +302,19 @@ a {
 /* Tablas */
 table {
     border: 2px solid gray;
-    padding: 6px;
     text-align: center;
     background-color: silver;
     color: white;
-    margin: auto auto;
     border-radius: 16px;
-    width: 90%;
-    font-size: 75%;
-    height: min(100%, auto);
+    margin: auto auto;
+    padding: 6px;
+    max-width: 65%;
+    font-size: 80%;
+    height: auto;
+    display: ruby-base;
+    justify-content: center;
+    position: relative;
+    word-wrap: break-word;
     
 
 
@@ -311,13 +322,14 @@ table {
 
 th { 
     border: 2px solid gray;
-    padding: 8px;
+    padding: 9px;
     text-align: center;
     background-color: black;
     color: white;
     border-radius: 16px;
-    margin: auto;
+    margin: auto auto;
     word-wrap: break-word; /* Asegura que el texto se ajuste */
+    max-width: 100%;
 }
 
 td {
@@ -327,8 +339,9 @@ td {
     background-color: black;
     color: white;
     border-radius: 16px;
-    margin: auto;
+    margin: auto auto;
     word-wrap: break-word; /* Asegura que el texto se ajuste */
+    max-width: 100%;
 }
 
 /* Comportamiento de scroll suave */
@@ -338,7 +351,7 @@ html {
                  Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
     padding: min(0, 12%);
-    font-size: min(5rem, auto);
+    font-size: min(1rem, auto);
 }
 
 /* Botones */
@@ -460,9 +473,10 @@ button:hover {
     width: 98.6%; /* Ocupa todo el ancho de la ventana */
     background-color: black; /* Fondo negro para superposición */
     color: #fff; /* Color del texto */
-    padding: 10px 20px; /* Margen interno */
+    padding: 15px;
+    text-align: left;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
-    z-index: 1000; /* Asegura que esté encima de todos los elementos */
+    z-index: 1024; /* Asegura que esté encima de todos los elementos */
     border: solid 3px black; /* Borde negro */
     border-radius: 0; /* Sin bordes redondeados para que encaje perfectamente */
 }
@@ -600,7 +614,7 @@ main.visible {
     text-align: left;
     font-style: italic;
     background-color: black;
-    border: 3px solid silver;
+    border: 6px solid silver;
     border-radius: 32px;
     display: block;
     justify-content: center;
@@ -681,6 +695,33 @@ iframe {
     max-width: 95%;
 
 
+}
+
+/* Diseño responsivo */
+@media (max-width: 1024px) {
+    .container {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        font-size: 18px;
+        padding: 10px;
+    }
+    .container {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        font-size: 16px;
+        padding: 8px;
+    }
+    .container {
+        padding: 5px;
+    }
 }
 
 
