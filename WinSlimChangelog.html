@@ -14,6 +14,118 @@
         <script src="WinSlim.js" defer></script>
         <!-- Enlazado de hoja de estilo CSS -->
         <link rel="stylesheet" href="CSS_es.css">   
+        <!-- ====== WINSLIM CHANGELOG REMASTERED UI ====== -->
+        <style>
+            /* Esconder elementos de dropdown y unificarlos */
+            .dropdown-label { display: none !important; }
+            .dropdown-checkbox { display: none !important; }
+            .dropdown-content { max-height: unset !important; opacity: 1 !important; margin: 0 !important; overflow: visible !important; }
+            .dropdown-container { margin: 0 !important; display: block !important; }
+            .dropdown-content-inner { margin-bottom: 0 !important; }
+            #BodyPad3 {
+                background: transparent;
+                border: none;
+                padding: 0;
+                margin: 0;
+            }
+            .unified-changelog {
+                max-width: 1100px;
+                margin: 0 auto;
+                padding: 40px 20px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            }
+            .changelog-title {
+                text-align: center;
+                font-size: 3.5rem;
+                font-weight: 800;
+                color: white;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                margin-bottom: 50px;
+                text-shadow: 0 0 20px rgba(192, 192, 192, 0.5);
+                border: none;
+            }
+            /* Styling exactly the <h2> elements to act as Cards! */
+            #BodyPad3 h2 {
+                text-align: left !important;
+                background: #080808 !important;
+                border: 2px solid #333 !important;
+                border-top-left-radius: 20px !important;
+                border-top-right-radius: 20px !important;
+                border-bottom-left-radius: 0 !important;
+                border-bottom-right-radius: 0 !important;
+                padding: 25px 30px !important;
+                margin: 0 !important;
+                font-size: 1.8rem !important;
+                color: white !important;
+                display: flex !important;
+                flex-wrap: wrap !important;
+                align-items: center !important;
+                justify-content: flex-start !important;
+                gap: 15px;
+            }
+            
+            #latest-release {
+                border-color: gold !important;
+                background: linear-gradient(180deg, #111100 0%, #080808 100%) !important;
+            }
+            
+            #BodyPad3 ul, #BodyPad3 ol {
+                list-style: none;
+                padding: 30px 40px !important;
+                margin: 0 0 50px 0 !important;
+                background: #050505;
+                border: 2px solid #333;
+                border-top: none;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
+                transition: transform 0.3s ease, border-color 0.3s;
+            }
+            
+            #latest-ul {
+                border-color: gold !important;
+                box-shadow: 0 10px 40px rgba(255, 215, 0, 0.15) !important;
+            }
+            
+            #BodyPad3 ul:hover, #BodyPad3 ol:hover {
+                border-color: silver;
+                transform: translateY(-2px);
+                box-shadow: 0 15px 40px rgba(192, 192, 192, 0.15);
+            }
+            
+            #BodyPad3 li {
+                font-size: 1.15rem !important;
+                padding: 15px 0 !important;
+                border-bottom: 1px solid #1a1a1a !important;
+                color: #d1d1d1 !important;
+                line-height: 1.7 !important;
+                font-style: normal !important;
+                margin: 0 !important;
+                background: transparent !important;
+                justify-content: flex-start !important;
+                text-align: left !important;
+                border-radius: 0 !important;
+            }
+            #BodyPad3 li:last-child {
+                border-bottom: none !important;
+            }
+            #BodyPad3 li strong {
+                color: white;
+                font-size: 1.2rem;
+            }
+            #BodyPad3 hr, #BodyPad4, #BodyPad3 > br { display: none !important; }
+            
+            @media (max-width: 768px) {
+                #BodyPad3 h2 { font-size: 1.4rem !important; padding: 20px !important; }
+                #BodyPad3 ul, #BodyPad3 ol { padding: 20px !important; }
+                .changelog-title { font-size: 2.2rem; }
+            }
+            /* Make internal sublists normal */
+            #BodyPad3 ol > li { list-style: decimal inside !important; }
+            #BodyPad3 ul ul { padding-left: 20px !important; list-style: disc inside !important; border: none !important; background: transparent !important; box-shadow: none !important; margin: 0 !important; }
+            #BodyPad3 ul ul:hover { transform: none !important; border-color: transparent !important; box-shadow: none !important; }
+        </style>
     </head>
     <body>
         <!-- Logotipo de la web con enlace a home -->
@@ -59,23 +171,10 @@
             </div>
         </header>
         <main>
-            <br>
-                <hr>
-                <br>
-                <span id="BodyPad4">    
-                    <h2>WinSLim 11 Builds:</h2>
-                    </span>
-                <div class="dropdown-container">
-                    <!-- Checkbox oculto para controlar el estado -->
-                    <input type="checkbox" id="dropdownCheckbox2" class="dropdown-checkbox">
-                    
-                    <!-- Etiqueta como botón para activar/desactivar -->
-                    <label for="dropdownCheckbox2" class="dropdown-label">WinSlim 11 DESKTOP Changelog ⤵</label>
-                    
-                    <!-- Contenido a desplegar -->
-                    <div class="dropdown-content">
-                      <div class="dropdown-content-inner" id="BodyPad3">
-                        <h2><strong>WinSlim 11 DESKTOP - ESTABLE 1.4</strong> - [28-01-2025]</h2>
+            <div class="unified-changelog">
+                <h1 class="changelog-title">Historial de Versiones</h1>
+                <div id="BodyPad3">
+                        <h2>🏅 <strong>WinSlim 11 DESKTOP - ESTABLE 1.4</strong> - [28-01-2025]</h2>
                         <ul>
                             <li><strong>🌟 Novedad🌟</strong>: Interfaz completamente renovada, con un nuevo tema y un menú de inicio integrado en el sistema.</li>
                             <li><strong>✅ Mejora ✅</strong>: Mejor rendimiento en juegos ejecutados en modo ventana sin bordes.</li>
@@ -87,29 +186,9 @@
                             <li><strong>🚧 Corrección 🚧</strong>: Se incluye Script corrector de errores comunes propios de la Build 24H2, la cual causaba errores en la instalación y uso de apps como "Epic Games Launcher" y "EAapp"</li>
 
                         </ul>
-                        </div>
-                      </div>
-                      <br>
-                <br>
-                <br>
-                <br>
-                <hr>
-            <span id="BodyPad4">    
-            <h2>WinSLim 10 Builds:</h2>
-            </span>
-            <div class="dropdown-container">
-                <!-- Checkbox oculto para controlar el estado -->
-                <input type="checkbox" id="dropdownCheckbox" class="dropdown-checkbox">
-                
-                <!-- Etiqueta como botón para activar/desactivar -->
-                <label for="dropdownCheckbox" class="dropdown-label">WinSlim 10 DESKTOP Changelog ⤵</label>
-                
-                <!-- Contenido a desplegar -->
-                <div class="dropdown-content">
-                  <div class="dropdown-content-inner" id="BodyPad3">
                       <!-- UPDATE R1.0_1.9.1 -->
-                      <h2><strong>WinSlim 10 DESKTOP - ESTABLE R1.0_1.9.1</strong> - [01-05-2026]</h2>
-<ul>
+                      <h2 id="latest-release"><div style="display:inline-block; background: gold; color: black; font-weight: 900; padding: 5px 20px; font-size: 0.9rem; text-transform: uppercase; border-radius: 20px; margin-right: 15px;">ÚLTIMA VERSIÓN</div><strong>WinSlim 10 DESKTOP - R1.0_1.9.1</strong> - [01-05-2026]</h2>
+<ul id="latest-ul">
     <li><strong>🌟 Arquitectura Reborn 1.0 (WinSlim BrainBoost® Engine) 🌟</strong>: Evolución integral del sistema operativo. Inyección del nuevo motor de automatización y despliegue (StartExperienceV3) que reestructura y adapta el sistema desde el primer segundo del arranque, garantizando la consistencia más sólida, ligera y libre de bloatware jamás creada.
     </li>
     
